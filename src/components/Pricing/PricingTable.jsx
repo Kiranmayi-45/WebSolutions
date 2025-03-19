@@ -6,7 +6,7 @@ const PricingTable = () => {
     {
       id: 1,
       name: 'Basic',
-      price: 29,
+      price: 5000,
       features: [
         '1 User',
         '5 Projects',
@@ -19,7 +19,7 @@ const PricingTable = () => {
     {
       id: 2,
       name: 'Pro',
-      price: 79,
+      price: 15000,
       features: [
         '5 Users',
         '20 Projects',
@@ -33,7 +33,7 @@ const PricingTable = () => {
     {
       id: 3,
       name: 'Enterprise',
-      price: 199,
+      price: 25000,
       features: [
         'Unlimited Users',
         'Unlimited Projects',
@@ -60,7 +60,8 @@ const PricingTable = () => {
               {plan.popular && <div className="popular-badge">Most Popular</div>}
               <h3>{plan.name}</h3>
               <div className="price">
-                <span className="currency">$</span>
+                <span className="currency">₹
+</span>
                 <span className="amount">{plan.price}</span>
                 <span className="period">/month</span>
               </div>
