@@ -1,70 +1,116 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Overview
+This is a **responsive  website** built with **React.js**. The project features a modern UI/UX design, API integration, performance optimizations, and a structured component-based architecture. It includes a hero section, service cards, a pricing table, and a contact form.
 
-In the project directory, you can run:
+## Features
+- **UI/UX Elements**
+  - Hero section with a background image/video
+  - Service cards
+  - Pricing table
+  - Contact form
+  
+- **API Integration**
+  - Fetch and display dummy user data from `https://jsonplaceholder.typicode.com/users`
 
-### `npm start`
+- **Performance Optimization**
+  - Fast load time
+  - Lazy loading for images
+  
+- **Search Algorithm**
+  - Debounced search bar for filtering user names dynamically
+  - Implemented using **Trie/HashMap** for optimized search
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Code Quality & Structure**
+  - Proper folder structure
+  - Clean and modular code
+  - Comments for better readability
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Project Structure
+```
+my-app/
+│── src/
+│   ├── components/
+│   │   ├── Contact/
+│   │   │   ├── ContactForm.jsx
+│   │   │   ├── ContactForm.css
+│   │   ├── Hero/
+│   │   │   ├── Hero.jsx
+│   │   │   ├── Hero.css
+│   │   ├── Layout/
+│   │   │   ├── Footer.jsx
+│   │   │   ├── Footer.css
+│   │   │   ├── Header.jsx
+│   │   │   ├── Header.css
+│   │   ├── Pricing/
+│   │   │   ├── PricingTable.jsx
+│   │   │   ├── PricingTable.css
+│   │   ├── SearchBar/
+│   │   │   ├── SearchBar.jsx
+│   │   │   ├── SearchBar.css
+│   │   ├── Services/
+│   │   ├── UserData/
+│   │   │   ├── UserCard.jsx
+│   │   │   ├── UserCard.css
+│   │   │   ├── UserList.jsx
+│   │   │   ├── UserList.css
+│   ├── utils/
+│   │   ├── api.js
+│   │   ├── debounce.js
+│   ├── App.js
+│   ├── App.css
+│   ├── index.js
+│── README.md
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Components Breakdown
+### **1. Layout Components**
+- `Navbar.jsx` - Responsive navigation bar with dynamic scrolling effect.
+- `Footer.jsx` - Displays quick links and contact details.
+- `Layout.jsx` - Wraps the main content with `Navbar` and `Footer`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### **2. Main Sections**
+- `Hero.jsx` - The landing section with a background image/video and CTA.
+- `ServicesSection.jsx` - Displays various business services.
+- `UserSection.jsx` - Fetches and displays user data from an API.
+- `PricingSection.jsx` - Showcases different pricing plans.
+- `ContactSection.jsx` - A contact form for user inquiries.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **3. Utilities**
+- `api.js` - Handles API calls.
+- `debounce.js` - Implements a debounce function to optimize search.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## Responsive Web Design
+✅ **Mobile-Friendly** - Adapts seamlessly to different screen sizes.
+✅ **Flexbox & Grid Layouts** - Ensures a structured and well-spaced design.
+✅ **Media Queries** - Adjusts styles dynamically for better UX.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation & Setup
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/YOUR-USERNAME/your-repo-name.git
+   ```
+2. Navigate into the project directory:
+   ```sh
+   cd my-app
+   ```
+3. Install dependencies:
+   ```sh
+   npm install
+   ```
+4. Start the development server:
+   ```sh
+   npm start
+   ```
+5. Open `http://localhost:3000/` in your browser.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
