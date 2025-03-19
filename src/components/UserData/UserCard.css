@@ -1,0 +1,79 @@
+.user-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .user-card-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-right: 15px;
+  }
+  
+  .user-basic-info {
+    flex: 1;
+  }
+  
+  .user-basic-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+  }
+  
+  .user-username {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  
+  .user-card-header i {
+    color: #666;
+    transition: transform 0.3s ease;
+  }
+  
+  .user-card.expanded .user-card-header i {
+    transform: rotate(180deg);
+  }
+  
+  .user-details {
+    padding: 0 20px 20px;
+    border-top: 1px solid #eee;
+  }
+  
+  .detail-item {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .detail-item i {
+    width: 20px;
+    color: #3498db;
+    margin-right: 10px;
+  }
+  
+  .detail-item span {
+    color: #555;
+    font-size: 0.95rem;
+    word-break: break-word;
+  }
